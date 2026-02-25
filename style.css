@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+	--light-slate-blue: hsl(252, 100%, 67%);
+	--light-royal-blue: hsl(241, 81%, 54%);
+
+	--violet-blue: hsla(256, 72%, 46%, 1);
+	--persian-blue: hsla(241, 72%, 46%, 0);
+
+	--white: hsl(0, 0%, 100%);
+	--pale-blue: hsl(221, 100%, 96%);
+	--light-lavender: hsl(241, 100%, 89%);
+	--dark-gray-blue: hsl(224, 30%, 27%);
+
+	--light-red: hsl(0, 100%, 67%);
+	--light-red-5: hsla(0, 100%, 67%, 0.05);
+	--orangey-yellow: hsl(39, 100%, 56%);
+	--orangey-yellow-5: hsla(39, 100%, 56%, 0.05);
+	--green-teal: hsl(166, 100%, 37%);
+	--green-teal-5: hsla(166, 100%, 37%, 0.05);
+	--cobalt-blue: hsl(234, 85%, 45%);
+	--cobalt-blue-5: hsl(234, 85%, 45%, 0.05);
+	font-family: 'Hanken Grotesk', sans-serif;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: var(--pale-blue);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+
+.card {
+	display: grid;
+	max-width: 736px;
+	background: var(--white);
+	grid-template-columns: 1fr 1fr;
+	border-radius: 30px;
+	/* overflow: hidden; */
+}
+
+.card__results {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: linear-gradient(
+		180deg,
+		var(--light-royal-blue) 0%,
+		var(--light-slate-blue) 100%
+	);
+	border-radius: 30px;
+	padding: 45px;
+	gap: 40px;
+}
+
+.results__title {
+	font-size: 24px;
+	font-weight: 700;
+	color: var(--light-lavender);
+}
+
+.results__score {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 200px;
+	height: 200px;
+	border-radius: 100%;
+	background: linear-gradient(
+		180deg,
+		var(--violet-blue) 0%,
+		var(--persian-blue) 100%
+	);
+}
+
+.score__main {
+	font-size: 74px;
+	font-weight: 800;
+	color: var(--white);
+}
+
+.score__total {
+	font-size: 18px;
+	font-weight: 600;
+	color: var(--light-lavender);
+}
+
+.outcome {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 25px;
+}
+
+.outcome__header {
+	font-size: 32px;
+	font-weight: 800;
+	color: var(--white);
+}
+
+.outcome__text {
+	font-size: 18px;
+	font-weight: 400;
+	color: var(--light-lavender);
+	text-align: center;
+}
+
+.card__summary {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 40px;
+}
+
+.summary__heading {
+	font-size: 24px;
+	font-weight: 800;
+	color: var(--dark-gray-blue);
+}
+
+.summary__skills {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+.skill {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 18px;
+	border-radius: 10px;
+}
+
+.skill--red {
+	background-color: var(--light-red-5);
+}
+
+.skill--orangey {
+	background-color: var(--orangey-yellow-5);
+}
+
+.skill--green {
+	background-color: var(--green-teal-5);
+}
+
+.skill--blue {
+	background-color: var(--cobalt-blue-5);
+}
+
+.skill__left {
+	display: flex;
+	gap: 16px;
+}
+
+.skill__img {
+}
+
+.skill__title {
+	font-size: 18px;
+}
+
+.skill__title--red {
+	color: var(--light-red);
+}
+
+.skill__title--orangey {
+	color: var(--orangey-yellow);
+}
+
+.skill__title--green {
+	color: var(--green-teal);
+}
+
+.skill__title--blue {
+	color: var(--cobalt-blue);
+}
+
+.skill__right {
+}
+
+.skill__out-of {
+	color: var(--light-lavender);
+	font-size: 18px;
+	font-weight: 800;
+}
+
+.skill__out-of .black {
+	font-size: 18px;
+	font-weight: 800;
+	color: var(--dark-gray-blue);
+}
+
+.btn {
+	padding: 18px;
+	border-radius: 24px;
+	text-align: center;
+}
+
+.btn--blue {
+	color: var(--white);
+	background: var(--dark-gray-blue);
+	font-size: 18px;
+	font-weight: 800;
+	transition: 0.4s background ease-in-out;
+}
+
+.btn--blue a {
+	color: var(--white);
+	text-decoration: none;
+}
+
+.btn--blue:hover {
+	background: var(--light-royal-blue);
+}
+
+@media screen and (max-width: 639px) {
+	.card {
+		grid-template-columns: 1fr;
+		/* margin: 2%; */
+		max-width: 400px;
+	}
+
+	.card__summary {
+		gap: 16px;
+	}
+}

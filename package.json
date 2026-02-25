@@ -1,0 +1,15 @@
+{
+  "name": "results-summary-component-main",
+  "version": "1.0.0",
+  "description": "![Design preview for the Results summary component coding challenge](./preview.jpg)",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "live-server"
+  },
+  "dependencies": {
+    "live-server": "^1.2.0"
+  }
+}
