@@ -1,4 +1,4 @@
-<!doctype html>
+<!doctype html lang="en">
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
@@ -13,21 +13,10 @@
 		/>
 
 		<title>Frontend Mentor | Results summary component</title>
-
-		<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-		<style>
-			.attribution {
-				font-size: 11px;
-				text-align: center;
-			}
-			.attribution a {
-				color: hsl(228, 45%, 44%);
-			}
-		</style>
 	</head>
 	<body>
-		<div class="card">
-			<div class="card__results">
+		<main class="card">
+			<section class="card__results">
 				<h3 class="results__title">Your Result</h3>
 				<div class="results__score">
 					<p class="score__main">76</p>
@@ -39,11 +28,11 @@
 						You scored higher than 65% of the people who have taken these tests.
 					</p>
 				</div>
-			</div>
-			<div class="card__summary">
+			</section>
+			<section class="card__summary">
 				<h3 class="summary__heading">Summary</h3>
 				<div class="summary__skills">
-					<div class="skill skill--red">
+					<article class="skill skill--red">
 						<div class="skill__left">
 							<img
 								class="skill__img"
@@ -55,9 +44,9 @@
 						<div class="skill__right">
 							<p class="skill__out-of"><span class="black">80</span> / 100</p>
 						</div>
-					</div>
+					</article>
 
-					<div class="skill skill--orangey">
+					<article class="skill skill--orangey">
 						<div class="skill__left">
 							<img
 								class="skill__img"
@@ -69,8 +58,8 @@
 						<div class="skill__right">
 							<p class="skill__out-of"><span class="black">92</span> / 100</p>
 						</div>
-					</div>
-					<div class="skill skill--green">
+					</article>
+					<article class="skill skill--green">
 						<div class="skill__left">
 							<img
 								class="skill__img"
@@ -82,8 +71,8 @@
 						<div class="skill__right">
 							<p class="skill__out-of"><span class="black">61</span> / 100</p>
 						</div>
-					</div>
-					<div class="skill skill--blue">
+					</article>
+					<article class="skill skill--blue">
 						<div class="skill__left">
 							<img
 								class="skill__img"
@@ -95,32 +84,10 @@
 						<div class="skill__right">
 							<p class="skill__out-of"><span class="black">92</span> / 100</p>
 						</div>
-					</div>
+					</article>
 				</div>
 				<div class="btn btn--blue"><a href="#">Continue</a></div>
-			</div>
-		</div>
-		<!-- Your Result
-  76
-  of 100
-
-  Great
-  You scored higher than 65% of the people who have taken these tests.
-  
-  Summary
-
-  Reaction
-  80 / 100
-
-  Memory
-  92 / 100
-
-  Verbal
-  61 / 100
-
-  Visual
-  72 / 100
-
-  Continue -->
+			</section>
+		</main>
 	</body>
 </html>
