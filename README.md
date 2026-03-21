@@ -37,4 +37,4 @@ Not much as it was a pretty basic design
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/courseiam)
+- Frontend Mentor - [@courseiam](https://www.frontendmentor.io/profile/courseiam)
